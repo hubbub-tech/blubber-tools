@@ -1,0 +1,13 @@
+# Compiled python modules.
+*.pyc
+.DS_Store
+
+# Private files
+.env.production
+.env.development
+.env.test
+/src/migrations/history
+
+# Notes
+todo.txt
+cheat.txt
