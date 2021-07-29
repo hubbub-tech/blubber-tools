@@ -1,6 +1,8 @@
 # Compiled python modules.
 *.pyc
 .DS_Store
+__pycache__
+.ipynb_checkpoints
 
 # Private files
 .env.production
