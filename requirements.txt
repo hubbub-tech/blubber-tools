@@ -1,4 +1,4 @@
-blubber-orm==0.5.4
+blubber-orm==0.6.0
 click==8.0.1
 DateTime==4.3
 Flask==2.0.1
