@@ -21,6 +21,8 @@ def swap_order(order_id, swap_item_id):
 
         dt_dropoff_completed = order.dt_dropoff_completed
         dt_pickup_completed = order.dt_pickup_completed
+        print("dt_dropoff_completed", dt_dropoff_completed)
+        print("dt_pickup_completed", dt_pickup_completed)
 
         swap_item = Items.get(swap_item_id)
         _safely_swap_reservation(renter, reservation, swap_item)
