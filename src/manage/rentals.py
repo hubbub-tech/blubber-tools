@@ -44,11 +44,11 @@ def swap_order(order_id, swap_item_id):
         if dropoff:
             dropoff.schedule_orders([swapped_order])
             if dt_dropoff_completed:
-                order.complete_dropoff()
+                order.complete_dropoff(dt_completed=dt_dropoff_completed)
         if pickup:
             pickup.schedule_orders([swapped_order])
             if dt_pickup_completed:
-                order.complete_pickup()
+                order.complete_pickup(dt_completed=dt_pickup_completed)
 
         print(f"Successfully swapped {item.name} for {swap_item.name}.")
     else:
