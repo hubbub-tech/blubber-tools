@@ -46,3 +46,8 @@ def _safely_swap_reservation(renter, reservation, swap_item):
             raise Exception("Could not be swapped because item is taken or expired.")
     else:
         raise Exception("Someone else is accessing the item at the moment.")
+
+def address_to_request(address):
+    requestable_address = address.display()
+    requestable_address = requestable_address.replace(" ", "+")
+    return requestable_address
