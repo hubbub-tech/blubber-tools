@@ -1,10 +1,8 @@
 import psycopg2
 import requests
 
-from blubber_orm import Users
-from blubber_orm import Items, Details, Addresses
-from blubber_orm import Dropoffs, Pickups, Logistics
-from blubber_orm import Orders, Extensions, Reservations
+from blubber_orm import Users, Items
+from blubber_orm import Addresses
 
 from .utils import address_to_request
 
