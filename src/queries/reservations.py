@@ -14,25 +14,44 @@ import matplotlib.pyplot as plt
 
 from blubber_orm import Users, Reservations
 
-def get_num_calendared(user_id):
+def get_num_calendared_user(user_id):
     calendared_reservations = Reservations.filter({
         "renter_id": user_id,
         "is_calendared": True
     })
     return len(calendared_reservations)
 
-def get_num_queried(user_id):
+def get_num_queried_user(user_id):
     queried_reservations = Reservations.filter({
         "renter_id": user_id
     })
     return len(queried_reservations)
 
-def get_conversion_ratio(user_id):
-    num_calendared = get_num_calendared(user_id)
-    num_queried = get_num_queried(user_id)
+def get_conversion_ratio_user(user_id):
+    num_calendared = get_num_calendared_user(user_id)
+    num_queried = get_num_queried_user(user_id)
     conversion_ratio = num_calendared / num_queried
     return conversion_ratio
 
+def get_num_calendared_item(item_id):
+    calendared_reservations = Reservations.filter({
+        "item_id": item_id,
+        "is_calendared": True
+    })
+    return len(calendared_reservations)
+
+def get_num_queried_item(item_id):
+    queried_reservations = Reservations.filter({
+        "renter_id": item_id
+    })
+    return len(queried_reservations)
+
+def get_conversion_ratio_item(item_id):
+    num_calendared = get_num_calendared_item(item_id)
+    num_queried = get_num_queried_item(item_id)
+    conversion_ratio = num_calendared / num_queried
+    return conversion_ratio
+    
 # NOTEBOOK WORK BELOW
 
 # given reservations.csv, make grouped datasets
