@@ -30,7 +30,11 @@ def get_num_queried_user(user_id):
 def get_conversion_ratio_user(user_id):
     num_calendared = get_num_calendared_user(user_id)
     num_queried = get_num_queried_user(user_id)
-    conversion_ratio = num_calendared / num_queried
+    try:
+        conversion_ratio = num_calendared / num_queried
+    except ZeroDivisionError as e:
+        conversion_ratio = 0.0
+        print("This user has not made any reservation queries on Hubbub.")
     return conversion_ratio
 
 def get_num_calendared_item(item_id):
@@ -49,7 +53,11 @@ def get_num_queried_item(item_id):
 def get_conversion_ratio_item(item_id):
     num_calendared = get_num_calendared_item(item_id)
     num_queried = get_num_queried_item(item_id)
-    conversion_ratio = num_calendared / num_queried
+    try:
+        conversion_ratio = num_calendared / num_queried
+    except ZeroDivisionError as e:
+        conversion_ratio = 0.0
+        print("This item has not been queried for reservations on Hubbub.")
     return conversion_ratio
 
 # NOTEBOOK WORK BELOW

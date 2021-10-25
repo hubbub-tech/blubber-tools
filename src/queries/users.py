@@ -19,59 +19,63 @@ def get_renters_by_date_placed(date_placed):
 
 def get_value_to_date(user_id):
     renter = Users.get(user_id)
-    orders = Orders.filter({"renter_id": user_id})
-    total_num_of_orders = 0
-    total_value_of_orders = 0.0
 
-    conversion_ratio = get_conversion_ratio_user(user_id)
+    if renter:
+        orders = Orders.filter({"renter_id": user_id})
+        total_num_of_orders = 0
+        total_value_of_orders = 0.0
 
-    is_renting = False
-    favorites = {}
+        conversion_ratio = get_conversion_ratio_user(user_id)
 
-    for order in orders:
-        total_num_of_orders += 1
-        total_value_of_orders += order.reservation._charge
+        is_renting = False
+        favorites = {}
 
-        if order.res_date_start < date.today():
-            if order.ext_date_end > date.today():
-                is_renting = True
+        for order in orders:
+            total_num_of_orders += 1
+            total_value_of_orders += order.reservation._charge
 
-        item = Items.get(order.item_id)
-        tags = Tags.by_item(item)
-        for tag in tags:
-            if favorites.get(tag.name) is None:
-                favorites[tag.name] = 1
-            else:
-                favorites[tag.name] += 1
+            if order.res_date_start < date.today():
+                if order.ext_date_end > date.today():
+                    is_renting = True
 
-    favorite_item = "all"
-    favorite_count = 0
-    for tag_name, count in favorites.items():
-        if count > favorite_count and tag_name != "all":
-            favorite_count = count
-            favorite_item = tag_name
+            item = Items.get(order.item_id)
+            tags = Tags.by_item(item)
+            for tag in tags:
+                if favorites.get(tag.name) is None:
+                    favorites[tag.name] = 1
+                else:
+                    favorites[tag.name] += 1
 
-    user_since = renter.dt_joined.strftime("%B %-d, %Y")
-    joined_days_ago = (date.today() - renter.dt_joined.date()).days
+        favorite_item = "all"
+        favorite_count = 0
+        for tag_name, count in favorites.items():
+            if count > favorite_count and tag_name != "all":
+                favorite_count = count
+                favorite_item = tag_name
 
-    print(
-    f"""
-        +++++++++++++++++++++++++++++++++++++++++++++++
+        user_since = renter.dt_joined.strftime("%B %-d, %Y")
+        joined_days_ago = (date.today() - renter.dt_joined.date()).days
 
-        Hubbub Shop Stats, User: {user_id}
+        print(
+        f"""
+            +++++++++++++++++++++++++++++++++++++++++++++++
 
-            Renter: {renter.name}
-            User Since: {user_since}, {joined_days_ago} days ago...
+            Hubbub Shop Stats, User: {user_id}
 
-            Orders-to-Date: {total_num_of_orders}
-            Lifetime Value: ${total_value_of_orders}
+                Renter: {renter.name}
+                User Since: {user_since}, {joined_days_ago} days ago...
 
-            Conversion Ratio: {conversion_ratio}
+                Orders-to-Date: {total_num_of_orders}
+                Lifetime Value: ${total_value_of_orders}
 
-            Most Rented Category: {favorite_item}
-            Is Currently Renting: {is_renting}
+                Conversion Ratio: {conversion_ratio}
 
-        +++++++++++++++++++++++++++++++++++++++++++++++
+                Most Rented Category: {favorite_item}
+                Is Currently Renting: {is_renting}
 
-    """
-    )
+            +++++++++++++++++++++++++++++++++++++++++++++++
+
+        """
+        )
+    else:
+        print(f"This user, id:{user_id}, does not exist.")
