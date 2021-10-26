@@ -12,6 +12,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
+from datetime import datetime, date, timedelta
 from blubber_orm import Users, Reservations
 
 def get_num_calendared_user(user_id):
@@ -59,6 +60,36 @@ def get_conversion_ratio_item(item_id):
         conversion_ratio = 0.0
         print("This item has not been queried for reservations on Hubbub.")
     return conversion_ratio
+
+def get_cumulative_downtime(item):
+    """Assumes that reservations is already sorted"""
+
+    downtime = 0
+    reservations = item.calendar.reservations
+    if reservations:
+        prev_date = item.calendar.date_started
+        while reservations:
+            reservation = reservations.pop(0)
+            downtime += (reservation.date_started - prev_date).days
+            prev_date = reservation.date_ended
+        if prev_date < date.today():
+            if date.today() < item.calendar.date_ended:
+                downtime += (date.today() - prev_date).days
+            else:
+                downtime += (item.calendar.date_ended - prev_date).days
+    else:
+        downtime = (date.today() - item.calendar.date_started).days
+    return downtime
+
+def get_average_downtime(item):
+    downtime = get_cumulative_downtime(item)
+    avg_downtime = downtime
+    try:
+        avg_downtime //= len(item.calendar.reservations)
+    except ZeroDivisionError as e:
+        print("This item has no reservation history.")
+        return downtime
+    return avg_downtime
 
 # NOTEBOOK WORK BELOW
 

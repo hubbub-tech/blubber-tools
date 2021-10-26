@@ -17,7 +17,7 @@ def get_renters_by_date_placed(date_placed):
     data_to_csv(targets)
     return targets
 
-def get_value_to_date(user_id):
+def get_renter_dashboard(user_id):
     renter = Users.get(user_id)
 
     if renter:
@@ -27,18 +27,19 @@ def get_value_to_date(user_id):
 
         conversion_ratio = get_conversion_ratio_user(user_id)
 
-        is_renting = False
         favorites = {}
+        active_rentals = []
 
         for order in orders:
+            item = Items.get(order.item_id)
+
             total_num_of_orders += 1
             total_value_of_orders += order.reservation._charge
 
             if order.res_date_start < date.today():
                 if order.ext_date_end > date.today():
-                    is_renting = True
+                    active_rentals.append(item.name)
 
-            item = Items.get(order.item_id)
             tags = Tags.by_item(item)
             for tag in tags:
                 if favorites.get(tag.name) is None:
@@ -62,7 +63,7 @@ def get_value_to_date(user_id):
 
             Hubbub Shop Stats, User: {user_id}
 
-                Renter: {renter.name}
+                Name: {renter.name}
                 User Since: {user_since}, {joined_days_ago} days ago...
 
                 Orders-to-Date: {total_num_of_orders}
@@ -70,8 +71,9 @@ def get_value_to_date(user_id):
 
                 Conversion Ratio: {conversion_ratio}
 
-                Most Rented Category: {favorite_item}
-                Is Currently Renting: {is_renting}
+                Rental Activity
+                - Most Rented Category: {favorite_item}
+                - Active Rentals: {', '.join(active_rentals)}
 
             +++++++++++++++++++++++++++++++++++++++++++++++
 
