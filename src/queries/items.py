@@ -1,6 +1,6 @@
 from datetime import datetime, date, timedelta
 
-from blubber_orm import Items
+from blubber_orm import Users, Items, Reservations
 
 from .reservations import get_cumulative_downtime, get_average_downtime, get_conversion_ratio_item
 from .utils import data_to_csv
