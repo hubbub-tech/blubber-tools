@@ -15,6 +15,8 @@ import matplotlib.pyplot as plt
 from datetime import datetime, date, timedelta
 from blubber_orm import Users, Reservations
 
+from .utils import reservation_sort
+
 def get_num_calendared_user(user_id):
     calendared_reservations = Reservations.filter({
         "renter_id": user_id,
@@ -67,10 +69,14 @@ def get_cumulative_downtime(item):
     downtime = 0
     reservations = item.calendar.reservations
     if reservations:
+        reservation_sort(reservations)
         prev_date = item.calendar.date_started
         while reservations:
             reservation = reservations.pop(0)
+            print(f"{prev_date}")
+            print(f"{reservation.date_started} to {reservation.date_ended}")
             downtime += (reservation.date_started - prev_date).days
+            print(f"downtime: {downtime}")
             prev_date = reservation.date_ended
         if prev_date < date.today():
             if date.today() < item.calendar.date_ended:
