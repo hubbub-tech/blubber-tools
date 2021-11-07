@@ -1,0 +1,220 @@
+id,name,price,is_available,is_featured,dt_created,lister_id,is_locked,is_routed,last_locked,address_num,address_street,address_apt,address_zip
+1,Mini Fridge - Medium,140,TRUE,TRUE,2020-08-29 18:10:36,1,FALSE,FALSE,0,70,Morningside Drive,,10027
+2,Black & Decker Blender - Small,25,TRUE,FALSE,2020-08-30 2:53:38,2,FALSE,FALSE,0,70,Morningside Drive,,10027
+3,Desk Lamp,15,TRUE,FALSE,2020-08-30 22:05:52,2,FALSE,FALSE,0,70,Morningside Drive,,10027
+5,Twin Air Mattress,120,FALSE,FALSE,2020-08-30 22:05:52,2,FALSE,FALSE,0,70,Morningside Drive,,10027
+6,20 lb Dumbbell Pair,150,FALSE,FALSE,2020-08-30 22:05:52,2,FALSE,FALSE,0,70,Morningside Drive,,10027
+7,Keurig,50,TRUE,FALSE,2020-09-01 4:41:10,2,FALSE,FALSE,0,70,Morningside Drive,,10027
+8,Nikon d5600,600,TRUE,FALSE,2020-09-01 4:41:10,2,FALSE,FALSE,0,70,Morningside Drive,,10027
+9,Electric Kettle/Hot Water Heater,20,TRUE,FALSE,2020-09-01 4:41:10,2,FALSE,FALSE,0,70,Morningside Drive,,10027
+11,Essential Oil Diffuser,10,TRUE,TRUE,2020-09-02 2:12:35,2,FALSE,FALSE,0,70,Morningside Drive,,10027
+12,French Press,8,TRUE,FALSE,2020-09-02 2:12:35,2,FALSE,FALSE,0,70,Morningside Drive,,10027
+13,Silicon Oven Mitts,10,TRUE,FALSE,2020-09-02 2:12:35,2,FALSE,FALSE,0,70,Morningside Drive,,10027
+14,Salt Lamp Light Bulb,5,TRUE,FALSE,2020-09-02 2:12:35,2,FALSE,FALSE,0,70,Morningside Drive,,10027
+15,JBL Charge 3,73,TRUE,TRUE,2020-09-02 2:12:35,2,FALSE,FALSE,0,70,Morningside Drive,,10027
+16,Handheld Bike Pump,10,FALSE,FALSE,2020-09-02 2:12:35,2,FALSE,FALSE,0,70,Morningside Drive,,10027
+17,LitHum Second Sem Books,60,TRUE,FALSE,2020-09-02 5:05:29,6,FALSE,FALSE,0,70,Morningside Drive,,10027
+18,General/Intensive Chemistry Textbooks,40,TRUE,FALSE,2020-09-02 5:05:29,6,FALSE,FALSE,0,70,Morningside Drive,,10027
+19,Manual for Gen Chem Lab,15,TRUE,FALSE,2020-09-02 5:05:29,6,FALSE,FALSE,0,70,Morningside Drive,,10027
+20,Principles of Econ Textbook,15,TRUE,FALSE,2020-09-02 5:05:29,6,FALSE,FALSE,0,70,Morningside Drive,,10027
+21,Physiology Textbook,30,TRUE,FALSE,2020-09-02 5:05:29,6,FALSE,FALSE,0,70,Morningside Drive,,10027
+22,Mowsh Bio Textbooks,60,TRUE,FALSE,2020-09-02 5:05:29,6,FALSE,FALSE,0,70,Morningside Drive,,10027
+23,Queen Air Mattress,80,TRUE,FALSE,2020-09-02 20:10:52,2,FALSE,FALSE,0,70,Morningside Drive,,10027
+24,"Sceptre E20 Monitor (20"")",80,TRUE,TRUE,2020-09-02 20:10:52,2,FALSE,FALSE,0,70,Morningside Drive,,10027
+25,"24"" Monitor/TV - Connects with HDMI",60,FALSE,FALSE,2020-09-02 20:10:52,2,FALSE,FALSE,0,70,Morningside Drive,,10027
+26,HDMI Cord (10 ft),6,TRUE,FALSE,2020-09-02 20:10:52,3,FALSE,FALSE,0,70,Morningside Drive,,10027
+27,Twin Air Mattress,36.99,FALSE,FALSE,2020-09-02 20:10:52,5,FALSE,FALSE,0,70,Morningside Drive,,10027
+28,Salt Lamp,20,TRUE,FALSE,2020-09-02 20:10:52,3,FALSE,FALSE,0,70,Morningside Drive,,10027
+29,Swiffer,15,TRUE,FALSE,2020-09-02 20:10:52,3,FALSE,FALSE,0,70,Morningside Drive,,10027
+30,Mac Book Pro T-tip Charger,70,TRUE,FALSE,2020-09-02 20:10:52,2,FALSE,FALSE,0,70,Morningside Drive,,10027
+31,LED String Lights,13,TRUE,FALSE,2020-09-02 20:10:52,2,FALSE,FALSE,0,70,Morningside Drive,,10027
+32,Steamer for Clothes,30,TRUE,FALSE,2020-09-03 4:01:25,5,FALSE,FALSE,0,70,Morningside Drive,,10027
+33,Steel Dolly (150-lb Load),52.37,FALSE,FALSE,2020-09-03 14:51:54,1,FALSE,FALSE,0,70,Morningside Drive,,10027
+34,iPad Mini 3 + Case,400,FALSE,FALSE,2020-09-03 14:51:54,1,FALSE,FALSE,0,70,Morningside Drive,,10027
+35,Fall CC Book Set,150,FALSE,FALSE,2020-09-03 14:51:53,1,FALSE,FALSE,0,70,Morningside Drive,,10027
+36,C++ Cookbook,40,FALSE,FALSE,2020-09-03 14:51:53,1,FALSE,FALSE,0,70,Morningside Drive,,10027
+37,Full CC book set,200,TRUE,FALSE,2020-09-03 16:50:54,11,FALSE,FALSE,0,70,Morningside Drive,,10027
+38,Mini Projector + HDMI Cord,65,FALSE,TRUE,2020-09-03 16:50:54,2,FALSE,FALSE,0,70,Morningside Drive,,10027
+39,Strategy Game Pack,200,TRUE,FALSE,2020-09-04 21:25:01,13,FALSE,FALSE,0,70,Morningside Drive,,10027
+40,Short-Medium-Long Play Pack,200,TRUE,FALSE,2020-09-04 21:25:01,13,FALSE,FALSE,0,70,Morningside Drive,,10027
+41,Disaster Pack,200,TRUE,FALSE,2020-09-04 21:25:01,13,FALSE,FALSE,0,70,Morningside Drive,,10027
+42,Cards Against Humanity Too Many Cards!,200,TRUE,FALSE,2020-09-04 21:25:01,13,FALSE,FALSE,0,70,Morningside Drive,,10027
+43,Small Diffuser,11,TRUE,FALSE,2020-09-04 22:38:11,2,FALSE,FALSE,0,70,Morningside Drive,,10027
+44,Conair Hair Dryer,8,TRUE,FALSE,2020-09-04 22:38:11,2,FALSE,FALSE,0,70,Morningside Drive,,10027
+45,Minifridge,110,FALSE,TRUE,2020-09-05 1:15:38,15,FALSE,FALSE,0,70,Morningside Drive,,10027
+46,Microwave,60,TRUE,FALSE,2020-09-05 1:15:38,15,FALSE,FALSE,0,70,Morningside Drive,,10027
+47,Fire TV Stick,30,FALSE,TRUE,2020-09-05 1:15:38,2,FALSE,FALSE,0,70,Morningside Drive,,10027
+48,15lbs Dumbells,100,FALSE,FALSE,2020-09-05 16:42:51,3,FALSE,FALSE,0,70,Morningside Drive,,10027
+49,Mini Ironing Board and Black & Decker Iron,30,TRUE,FALSE,2020-09-05 16:42:51,3,FALSE,FALSE,0,70,Morningside Drive,,10027
+50,15lbs Dumbbells,80,TRUE,TRUE,2020-09-05 16:42:51,3,FALSE,FALSE,0,70,Morningside Drive,,10027
+51,Large Tower Fan,30,FALSE,FALSE,2020-09-05 16:42:51,2,FALSE,FALSE,0,70,Morningside Drive,,10027
+52,Small Tower Fan,20,TRUE,TRUE,2020-09-05 16:42:51,2,FALSE,FALSE,0,70,Morningside Drive,,10027
+53,Bike U-Lock,25,TRUE,FALSE,2020-09-06 17:02:35,2,FALSE,FALSE,0,70,Morningside Drive,,10027
+54,Drill Set,60,TRUE,FALSE,2020-09-06 17:02:35,2,FALSE,FALSE,0,70,Morningside Drive,,10027
+55,Tool Set,30,TRUE,FALSE,2020-09-06 17:02:35,2,FALSE,FALSE,0,70,Morningside Drive,,10027
+56,Intex Comfort Plush Queen with Built-In Pump,79.99,TRUE,FALSE,2020-09-07 12:56:52,18,FALSE,FALSE,0,70,Morningside Drive,,10027
+57,Calculus: Early Transcendentals (8th Edition) - James Stewart,40,TRUE,FALSE,2020-09-07 12:56:52,2,FALSE,FALSE,0,70,Morningside Drive,,10027
+58,TI-84 Plus,80,FALSE,FALSE,2020-09-08 19:40:26,2,FALSE,FALSE,0,70,Morningside Drive,,10027
+59,TI-84 Plus Calculator,60,TRUE,FALSE,2020-09-08 19:40:26,2,FALSE,FALSE,0,70,Morningside Drive,,10027
+60,Shoe Rack,25.57,TRUE,FALSE,2020-09-08 19:40:26,4,FALSE,FALSE,0,70,Morningside Drive,,10027
+61,The Divine Comedy of Dante Alighieri,6.95,TRUE,FALSE,2020-09-08 21:28:32,4,FALSE,FALSE,0,70,Morningside Drive,,10027
+62,"Integrated Korean: Beginning 1, 2nd Edition",7.09,FALSE,FALSE,2020-09-08 21:28:32,4,FALSE,FALSE,0,70,Morningside Drive,,10027
+63,"Integrated Korean: Beginning 2, 2nd Edition",18.79,FALSE,FALSE,2020-09-08 21:28:32,4,FALSE,FALSE,0,70,Morningside Drive,,10027
+64,"Integrated Korean: Beginning 2, 2nd Edition",18.79,FALSE,FALSE,2020-09-08 21:28:32,4,FALSE,FALSE,0,70,Morningside Drive,,10027
+65,"The Anxiety & Phobia Workbook, 6th Edition",25.95,FALSE,FALSE,2020-09-08 21:28:32,4,FALSE,FALSE,0,70,Morningside Drive,,10027
+66,Medium Mini-fridge,115,FALSE,TRUE,2020-09-09 21:33:54,2,FALSE,FALSE,0,70,Morningside Drive,,10027
+68,"Chalk Board! (36"" x 48"")",30,TRUE,FALSE,2020-09-12 15:41:18,3,FALSE,FALSE,0,70,Morningside Drive,,10027
+69,Lasko Tower Fan,41,TRUE,FALSE,2020-09-12 15:41:18,3,FALSE,FALSE,0,70,Morningside Drive,,10027
+70,Swivel Desk Chair,40,FALSE,TRUE,2020-09-12 15:41:18,3,FALSE,FALSE,0,70,Morningside Drive,,10027
+71,Hammock Stand,70,TRUE,FALSE,2020-09-12 15:41:18,3,FALSE,FALSE,0,70,Morningside Drive,,10027
+72,BISSEL Little green ProHeat Portable Deep Cleaner,120,TRUE,FALSE,2020-09-14 19:54:35,29,FALSE,FALSE,0,70,Morningside Drive,,10027
+73,Smartphone Tripod,15,FALSE,FALSE,2020-09-14 19:54:35,30,FALSE,FALSE,0,70,Morningside Drive,,10027
+74,GRE Vocab Flashcards,8,TRUE,FALSE,2020-09-15 5:48:48,2,FALSE,FALSE,0,70,Morningside Drive,,10027
+75,Medium Mini-fridge,90,FALSE,FALSE,2020-09-15 5:48:48,2,FALSE,FALSE,0,70,Morningside Drive,,10027
+78,Black & Decker Iron,15,TRUE,FALSE,2020-09-15 5:48:48,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+79,Floor Lamp,23,TRUE,FALSE,2020-09-15 5:48:48,2,FALSE,FALSE,0,70,Morningside Drive,,10027
+80,Small Mini-Fridge,65,FALSE,TRUE,2020-09-15 5:48:48,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+81,LED Multi-color Fairy Lights (40ft),12.5,TRUE,TRUE,2020-09-15 5:48:48,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+82,Microwave - Large,50,TRUE,FALSE,2020-09-15 5:48:48,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+83,Door Mirror,15,TRUE,FALSE,2020-09-15 5:48:48,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+84,Frisbee - 175 grams,9,TRUE,FALSE,2020-09-15 5:48:48,2,FALSE,FALSE,0,70,Morningside Drive,,10027
+85,"Blue Bike (26"")",90,FALSE,FALSE,2020-09-16 6:15:02,2,FALSE,FALSE,0,70,Morningside Drive,,10027
+86,Standing Bike Pump,20,TRUE,FALSE,2020-09-16 6:15:02,2,FALSE,FALSE,0,70,Morningside Drive,,10027
+87,Desk Chair,50,FALSE,FALSE,2020-09-26 18:40:43,2,FALSE,FALSE,0,70,Morningside Drive,,10027
+93,"Black and Decker AC, fan, Heater, Dehumidifier",400,FALSE,FALSE,2020-09-27 18:13:09,11,FALSE,FALSE,0,70,Morningside Drive,,10027
+126,Swivel Desk Chair,40,TRUE,FALSE,2020-10-06 4:22:48,3,FALSE,FALSE,0,70,Morningside Drive,,10027
+127,Hangers 20-pack,12,TRUE,FALSE,2020-10-08 20:45:11,2,FALSE,FALSE,0,70,Morningside Drive,,10027
+128,"8"" Bed Risers",7,TRUE,FALSE,2020-10-19 1:57:22,2,FALSE,FALSE,0,70,Morningside Drive,,10027
+129,Yoga Mat (AmazonBasics),20,TRUE,FALSE,2020-10-24 15:57:37,2,FALSE,FALSE,0,70,Morningside Drive,,10027
+130,Bike Rope Lock (Bell),15,TRUE,FALSE,2020-10-24 15:57:37,2,FALSE,FALSE,0,70,Morningside Drive,,10027
+131,"Fairy Lights (wall outlet, yellow-light)",10,TRUE,FALSE,2020-10-24 15:57:37,2,FALSE,FALSE,0,70,Morningside Drive,,10027
+132,3 Inch Memory Foam Mattress Topper,62.47,TRUE,FALSE,2020-11-05 14:52:39,42,FALSE,FALSE,0,70,Morningside Drive,,10027
+133,"Columbia Graduation Cap and Gown (5'6"" - 5'8"")",80,TRUE,FALSE,2020-11-28 2:15:39,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+134,Bike U-Lock with Braided Steel Loop,30,TRUE,FALSE,2020-11-28 2:15:38,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+136,20 lb Dumbell Weights Set,90,TRUE,FALSE,2020-11-28 2:15:39,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+137,"Dell Inspiron 11 Laptop - 11.6"" Touch Screen - Intel Pentium",100,TRUE,FALSE,2020-12-04 4:25:05,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+138,Small Mini-Fridge,65,TRUE,TRUE,2020-12-20 10:35:21,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+140,Floor Lamp,23,TRUE,FALSE,2020-12-20 10:35:21,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+141,Lasko Tower Fan,48,TRUE,FALSE,2020-12-20 10:35:21,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+142,Space Heater,16,TRUE,FALSE,2020-12-22 11:23:22,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+143,LED Multi-color Fairy Lights (33 ft),12,TRUE,FALSE,2020-12-22 11:23:22,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+144,Two-Player Game Pack,100,TRUE,FALSE,2020-12-22 11:23:23,13,FALSE,FALSE,0,70,Morningside Drive,,10027
+145,Hex & Co. Staff Picks Game Pack 1,90,TRUE,FALSE,2020-12-22 11:23:23,13,FALSE,FALSE,0,70,Morningside Drive,,10027
+146,Hex & Co. Staff Picks Game Pack 2,90,TRUE,FALSE,2020-12-22 11:23:23,13,FALSE,FALSE,0,70,Morningside Drive,,10027
+147,Small Honeywell TurboForce Fan,20,TRUE,TRUE,2020-12-23 12:09:17,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+148,Standing/Door Mirror,15,TRUE,FALSE,2020-12-23 12:09:17,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+151,Mini Cupcake Pans (Set of 2),12,TRUE,FALSE,2020-12-28 0:16:31,2,FALSE,FALSE,0,70,Morningside Drive,,10027
+152,Cookware Set,45,TRUE,FALSE,2020-12-28 0:16:32,2,FALSE,FALSE,0,70,Morningside Drive,,10027
+153,Plates/Bowls/Cutlery Set,20,TRUE,FALSE,2020-12-28 0:16:32,2,FALSE,FALSE,0,70,Morningside Drive,,10027
+154,Black & Decker Blender,32,TRUE,FALSE,2020-12-29 0:27:22,2,FALSE,FALSE,0,70,Morningside Drive,,10027
+155,Medium Side Table (w/ 2 Drawers),35,TRUE,TRUE,2020-12-29 0:27:22,2,FALSE,FALSE,0,70,Morningside Drive,,10027
+156,Monopoly (Cheater's Edition),15,TRUE,FALSE,2020-12-31 1:42:17,4,FALSE,FALSE,0,70,Morningside Drive,,10027
+157,Honeywell Small Round Fan,15,TRUE,FALSE,2020-12-31 1:42:17,4,FALSE,FALSE,0,70,Morningside Drive,,10027
+158,Measuring Cups,2,TRUE,FALSE,2020-12-31 1:42:17,4,FALSE,FALSE,0,70,Morningside Drive,,10027
+159,Plastic Measuring Spoons,3,TRUE,FALSE,2020-12-31 1:42:17,4,FALSE,FALSE,0,70,Morningside Drive,,10027
+160,Cards Against Humanity (includes CAH Saves America cards),25,TRUE,FALSE,2020-12-31 1:42:17,4,FALSE,FALSE,0,70,Morningside Drive,,10027
+161,Dominoes,20,TRUE,FALSE,2020-12-31 1:42:17,4,FALSE,FALSE,0,70,Morningside Drive,,10027
+162,Utensil Drawer Organizer,8,TRUE,FALSE,2020-12-31 1:42:17,4,FALSE,FALSE,0,70,Morningside Drive,,10027
+163,Twin XL Comforter,19.99,TRUE,FALSE,2020-12-31 1:42:17,4,FALSE,FALSE,0,70,Morningside Drive,,10027
+164,Twin Mattress Pad,25,TRUE,FALSE,2020-12-31 1:42:17,4,FALSE,FALSE,0,70,Morningside Drive,,10027
+165,Twister,13,TRUE,FALSE,2020-12-31 1:42:17,4,FALSE,FALSE,0,70,Morningside Drive,,10027
+166,Large Mini-fridge,130,FALSE,TRUE,2021-01-01 2:13:11,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+167,Mini Projector + HDMI Cord,65,TRUE,FALSE,2021-01-01 2:13:11,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+170,Small Mini-Fridge,75,TRUE,TRUE,2021-01-02 2:50:27,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+172,15lbs Dumbbell Weights,75,TRUE,FALSE,2021-01-02 2:50:27,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+173,Cookware Set (Pots and Pans),45,TRUE,FALSE,2021-01-03 3:15:09,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+174,Small Cookware Set,27,TRUE,FALSE,2021-01-04 3:51:44,2,FALSE,FALSE,0,70,Morningside Drive,,10027
+175,Mini-Projector (VANKYO),80,FALSE,FALSE,2021-01-05 6:46:42,2,FALSE,FALSE,0,70,Morningside Drive,,10027
+178,"Foldable Step Stool (15"")",22,TRUE,FALSE,2021-01-05 6:46:42,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+179,Bartending Cocktail Shaker Set,30,TRUE,FALSE,2021-01-05 6:46:43,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+180,Desk Lamp,15,TRUE,FALSE,2021-01-05 6:46:42,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+181,Large Mini-fridge (2-Door),100,TRUE,TRUE,2021-01-05 21:57:12,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+182,Small Haier Mini-Fridge,65,TRUE,TRUE,2021-01-06 4:12:35,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+183,Ikea Swivel Desk Chair,50,FALSE,FALSE,2021-01-06 17:58:58,4,FALSE,FALSE,0,70,Morningside Drive,,10027
+184,Ikea Swivel Desk Chair,40,TRUE,FALSE,2021-01-06 17:58:59,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+185,Kitchen Utensils,7,TRUE,FALSE,2021-01-06 17:58:59,5,FALSE,FALSE,0,70,Morningside Drive,,10027
+186,Kitchen Utensils: Tongs and Spatula,8,TRUE,FALSE,2021-01-06 17:58:58,5,FALSE,FALSE,0,70,Morningside Drive,,10027
+187,Cook's Essentials Pan Set,40,TRUE,FALSE,2021-01-06 17:58:59,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+188,Shower Organizer,16,TRUE,FALSE,2021-01-06 17:58:59,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+189,10lbs Dumbbell Weights,50,TRUE,FALSE,2021-01-07 18:55:31,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+190,Pour Over Coffee Maker,17,FALSE,FALSE,2021-01-08 19:17:13,2,FALSE,FALSE,0,70,Morningside Drive,,10027
+191,Pour Over Coffee Maker,17,TRUE,FALSE,2021-01-08 19:17:12,2,FALSE,FALSE,0,70,Morningside Drive,,10027
+192,Hamilton Beach Coffee Grinder,20,TRUE,FALSE,2021-01-08 19:17:12,2,FALSE,FALSE,0,70,Morningside Drive,,10027
+193,Sharp Microwave Oven,60,TRUE,FALSE,2021-01-08 19:17:12,2,FALSE,FALSE,0,70,Morningside Drive,,10027
+195,Swivel Desk Chair,40,TRUE,TRUE,2021-01-10 16:47:34,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+196,Small Side Table,15,TRUE,TRUE,2021-01-10 16:47:34,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+197,Sunbeam Microwave,60,TRUE,FALSE,2021-01-11 6:27:57,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+198,Amazon Basics Microwave,60,TRUE,FALSE,2021-01-14 17:45:40,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+199,Echo Dot (3rd Gen),39,TRUE,FALSE,2021-01-16 18:29:57,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+200,Assorted Hangers (20 pack),12,FALSE,TRUE,2021-01-16 18:29:57,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+201,Swiffer Mop Stick,14,TRUE,FALSE,2021-01-16 18:29:57,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+202,Nederlands in actie Dutch Textbook (ISBN 978 90 469 0298 1),60,FALSE,FALSE,2021-01-17 21:49:02,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+203,Medium Mini-Fridge,95,FALSE,TRUE,2021-01-18 7:20:23,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+204,Makeup Mirror (2-sided),20,TRUE,FALSE,2021-01-18 7:20:23,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+205,20lbs Dumbbell Weights Pair,90,TRUE,TRUE,2021-01-18 7:20:23,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+207,Plastic Hangers (20-pack),12,TRUE,FALSE,2021-01-19 18:08:35,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+208,Cookware T-fal Pan Set,35,TRUE,FALSE,2021-01-19 18:08:35,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+209,Clothes Hangers (20-pack),12,TRUE,FALSE,2021-01-19 18:08:35,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+210,VIZIO 40” Smart TV,140,TRUE,FALSE,2021-01-20 2:08:12,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+211,Door Mirror,22,TRUE,FALSE,2021-01-23 0:02:10,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+212,Westinghouse Microwave,65,TRUE,FALSE,2021-01-23 3:09:07,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+213,Insignia Medium Mini-Fridge,110,TRUE,TRUE,2021-01-24 19:36:42,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+214,Small Warm LED Desk Lamp,15,TRUE,FALSE,2021-01-26 0:26:06,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+215,Nature Bright Light Therapy Lamp,50,TRUE,FALSE,2021-01-27 20:22:47,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+216,8lbs Dumbbell Weights,30,TRUE,FALSE,2021-02-03 15:22:13,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+217,Desk Lamp,20,TRUE,FALSE,2021-02-03 15:22:10,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+218,Columbia Graduation Cap and Gown (5’3”-5’5”),80,TRUE,FALSE,2021-02-03 15:22:13,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+219,Columbia Graduation Cap and Gown (5’6”-5’8”),80,TRUE,FALSE,2021-02-03 15:22:13,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+220,Clothes Steamer,25,TRUE,FALSE,2021-02-03 15:22:13,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+221,Black & Decker Toaster Oven,35,TRUE,FALSE,2021-02-04 15:43:39,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+222,Columbia Undergrad Cap and Gown (6'0”-6’2”),80,FALSE,FALSE,2021-02-05 5:38:49,1,FALSE,FALSE,0,70,Morningside Drive,,10027
+223,Columbia Graduation Cap and Gown (5’6”-5’8”),80,TRUE,FALSE,2021-02-05 5:38:49,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+224,Griddle,15,FALSE,FALSE,2021-02-07 23:36:19,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+225,Hangers,10,FALSE,FALSE,2021-02-08 2:37:25,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+226,5lbs Dumbbell Weights,28,TRUE,FALSE,2021-02-08 2:37:25,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+227,Black & Decker Blender,45,TRUE,FALSE,2021-02-11 2:08:07,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+228,5lbs Dumbbell Weights,23,FALSE,TRUE,2021-02-11 2:08:07,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+229,3lbs Dumbbell Weights,20,TRUE,TRUE,2021-02-11 2:08:07,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+230,Bella 900-Watt Microwave,50,TRUE,TRUE,2021-02-11 2:08:07,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+231,Soda Stream Fizzi,60,TRUE,TRUE,2021-02-17 11:51:34,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+232,Black & Decker Toaster Oven,39,TRUE,TRUE,2021-02-21 20:28:01,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+233,1.7 cu. ft. Small Galanz Mini-Fridge,79,TRUE,FALSE,2021-02-28 10:41:24,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+234,Surge Protector Power Strip,19,TRUE,FALSE,2021-03-04 22:21:02,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+235,Six-outlet Power Strip,15,TRUE,FALSE,2021-03-04 22:21:02,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+236,Masters Graduation Cap and Gown (5’6”-5’8”),90,TRUE,FALSE,2021-03-16 18:30:14,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+237,Honeywell Slim Tower Fan,40,TRUE,TRUE,2021-03-18 19:18:35,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+238,Twin air mattress + pump,35,FALSE,FALSE,2021-03-18 19:18:35,166,FALSE,FALSE,0,70,Morningside Drive,,10027
+239,Calculus textbook,200,FALSE,FALSE,2021-03-18 19:18:35,166,FALSE,FALSE,0,70,Morningside Drive,,10027
+240,"Tempur-Pedic 3"" mattress topper",300,FALSE,FALSE,2021-03-18 19:18:35,166,FALSE,FALSE,0,70,Morningside Drive,,10027
+241,Fridge + Microwave,200,FALSE,FALSE,2021-04-05 13:40:45,228,FALSE,FALSE,0,70,Morningside Drive,,10027
+242,Samsung 40” Smart TV + Remote,78,TRUE,FALSE,2021-04-13 22:34:43,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+243,Small Sunbeam Mini Fridge,65,TRUE,TRUE,2021-04-25 14:19:14,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+244,Samsung 32” 1080p TV,92,TRUE,FALSE,2021-04-25 14:19:14,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+245,Insignia 48” 1080p Smart TV + Remote,105,TRUE,TRUE,2021-04-27 15:03:59,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+246,Black & Decker Medium Mini Fridge,90,TRUE,FALSE,2021-04-27 15:03:59,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+247,Haier Large Two Door Mini Fridge,107,TRUE,FALSE,2021-04-29 15:47:52,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+248,Medium Magic Chef Mini Fridge,90,TRUE,FALSE,2021-05-01 19:06:48,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+249,Medium Stainless Steel Mini Fridge,95,TRUE,TRUE,2021-05-02 16:50:14,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+250,Haier Large Mini Fridge,100,TRUE,TRUE,2021-05-03 17:30:01,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+251,Silver 3-Light Floor Lamp,36,TRUE,TRUE,2021-05-05 3:55:37,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+252,Holmes Oscillating Tower Fan,47,TRUE,FALSE,2021-05-05 3:55:37,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+253,Westinghouse 700W Microwave,60,TRUE,TRUE,2021-05-07 4:28:49,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+254,Rival 0.7 Cu. Ft. Microwave,56,TRUE,FALSE,2021-05-07 4:28:49,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+255,Oster Electric Stove,27,TRUE,FALSE,2021-05-13 18:10:23,282,FALSE,FALSE,0,70,Morningside Drive,,10027
+256,Hamilton Beach Electric Kettle,25,TRUE,FALSE,2021-05-13 18:10:23,282,FALSE,FALSE,0,70,Morningside Drive,,10027
+257,Vornado Medium Circular Fan,30,TRUE,FALSE,2021-05-19 0:24:27,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+258,Seville Large Tower Fan,40,TRUE,FALSE,2021-05-20 0:40:43,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+259,Lasko Tower Fan + Remote,47,TRUE,TRUE,2021-05-20 0:40:44,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+260,2-Slice Toaster,27,TRUE,TRUE,2021-05-23 2:08:20,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+261,Hamilton Beach 2-Slice Toaster,28,TRUE,FALSE,2021-05-23 2:08:20,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+262,Swivel Desk Chair,40,TRUE,FALSE,2021-05-29 18:16:51,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+263,LG Window AC,85,TRUE,FALSE,2021-06-03 22:09:53,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+264,Bike - Specialized Brand,125,TRUE,FALSE,2021-06-08 22:18:36,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+265,Bike - Gary Fisher Brand,125,TRUE,FALSE,2021-06-08 22:18:36,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+266,Wire Cord Bike Combo Lock,13,TRUE,FALSE,2021-06-08 22:18:36,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+267,Hand-held Bike Pump,15,TRUE,FALSE,2021-06-08 22:18:36,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+268,Bike Helmet,15,TRUE,FALSE,2021-06-09 22:55:23,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+269,Fire TV Stick,25,TRUE,FALSE,2021-06-24 2:40:32,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+270,Acer 21” HD Computer Monitor,82,TRUE,FALSE,2021-06-27 3:41:24,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+271,Betty Crocker Hand Blender,24,TRUE,FALSE,2021-07-17 1:27:08,32,FALSE,FALSE,0,70,Morningside Drive,,10027
+272,Black + Decker Iron,30,TRUE,FALSE,2021-07-17 1:27:08,32,FALSE,FALSE,0,70,Morningside Drive,,10027
