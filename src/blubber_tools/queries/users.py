@@ -57,8 +57,7 @@ def get_renter_dashboard(user_id):
         user_since = renter.dt_joined.strftime("%B %-d, %Y")
         joined_days_ago = (date.today() - renter.dt_joined.date()).days
 
-        print(
-        f"""
+        return f"""
             +++++++++++++++++++++++++++++++++++++++++++++++
 
             Hubbub Shop Stats, User: {user_id}
@@ -78,6 +77,5 @@ def get_renter_dashboard(user_id):
             +++++++++++++++++++++++++++++++++++++++++++++++
 
         """
-        )
     else:
-        print(f"This user, id:{user_id}, does not exist.")
+        return f"This user, id:{user_id}, does not exist."

@@ -63,8 +63,7 @@ def get_item_dashboard(item_id):
     else:
         renter_name = "No renter right now."
 
-    print(
-    f"""
+    return f"""
         ++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
         Hubbub Shop Stats, Item: {item_id}
@@ -84,4 +83,3 @@ def get_item_dashboard(item_id):
 
         ++++++++++++++++++++++++++++++++++++++++++++++++++++++
     """
-    )
