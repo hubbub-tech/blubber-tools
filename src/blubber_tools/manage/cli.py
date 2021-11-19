@@ -1,6 +1,6 @@
 import click
 
-from .emails import email_interview_request
+from .emails import request_for_interview
 
 @click.group("email")
 def email_interface():
@@ -13,4 +13,6 @@ def interview(file):
     """Request interviews of each user from a list of users."""
 
     assert file[-4:] == '.csv', 'the file must be a csv file type'
-    email_interview_request(file)
+    request_for_interview(file)
+
+email_interface.add_command(interview)
