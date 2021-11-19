@@ -1,6 +1,6 @@
 import click
 
-from .manage.cli import hello
+from .manage.cli import email_interface
 from .queries.cli import dashboard, users_interface
 
 @click.group()
@@ -20,10 +20,9 @@ def cli():
     """
     click.echo("Welcome to Blubber Tools.")
 
-cli.add_command(hello)
 cli.add_command(dashboard)
-
 cli.add_command(users_interface)
+cli.add_command(email_interface)
 
 if __name__ == '__main__':
     cli()
