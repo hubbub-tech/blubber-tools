@@ -66,7 +66,7 @@ def generate_renters_by_ltv_csv():
         ])
     LTVs.sort(key = lambda user: user[-1])
     today_str = date.today().strftime("%Y-%m-%d")
-    data_to_csv(LTVs, filename=f"user-ltv_{today_str}")
+    data_to_csv(LTVs, filename=f"user-ltv_{today_str}.csv")
     # return LTVs
 
 def get_renter_dashboard(user_id):
