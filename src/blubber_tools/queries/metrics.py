@@ -5,32 +5,57 @@ from datetime import date
 from datetime import datetime
 from dateutil.relativedelta import relativedelta
 import pytz
+
+from blubber_orm import get_db
 from blubber_orm import Users, Reservations, Orders
 # from utils import data_to_csv
 
 ## make pandas dataframes for reservations, orders, users
-res_li=[]
-res=Reservations.get_all()
-for reservation in res:
-    res_li.append([reservation.date_started,reservation.date_ended,reservation.is_calendared,reservation.renter_id,reservation._charge,reservation.dt_created])
-res=pd.DataFrame(res_li,columns=['date_started','date_ended','is_calendared','renter_id','charge','dt_created'])
-# print(res)
-orders_li=[]
-orders=Orders.get_all()
-for order in orders:
-    orders_li.append([order.date_placed,order.renter_id,order.res_date_start,order.res_date_end])
-# print(type(orders))
-orders=pd.DataFrame(orders_li,columns=['date_placed','renter_id','res_date_start','res_date_end'])
-# print(orders)
-users_li=[]
-users=Users.get_all()
-for user in users:
-    users_li.append([user.dt_joined])
-users=pd.DataFrame(users_li,columns=['dt_joined'])
-# print(users)#
+def write_reservations_to_pandas():
+    database = get_db() # @notice: database is an object containing psycopg.cursor and pscopg.connection
+
+    SQL = "SELECT date_started, date_ended, is_calendared, renter_id, charge, dt_created FROM reservations"
+
+    database.cursor.execute(SQL)
+    results = database.cursor.fetchall() # @notice: result is a list of tuples
+
+    res_pandas = pd.DataFrame(
+        results,
+        columns=['date_started','date_ended','is_calendared','renter_id','charge','dt_created']
+    )
+    return res_pandas
+
+def write_orders_to_pandas():
+    database = get_db() # @notice: database is an object containing psycopg.cursor and pscopg.connection
+
+    SQL = "SELECT date_placed, renter_id, res_date_start, res_date_end FROM orders"
+
+    database.cursor.execute(SQL)
+    results = database.cursor.fetchall() # @notice: result is a list of tuples
+
+    orders_pandas = pd.DataFrame(
+        results,
+        columns=['date_placed','renter_id','res_date_start','res_date_end']
+    )
+    return orders_pandas
+
+def write_users_to_pandas():
+    database = get_db() # @notice: database is an object containing psycopg.cursor and pscopg.connection
+
+    SQL = "SELECT dt_joined FROM users"
+
+    database.cursor.execute(SQL)
+    results = database.cursor.fetchall() # @notice: result is a list of tuples
+
+    users_pandas = pd.DataFrame(results, columns=['dt_joined'])
+    return users_pandas
+
+res = write_reservations_to_pandas()
+orders = write_orders_to_pandas()
+users = write_users_to_pandas()
 
 ## make columns datetime
-users['dt_joined']=pd.to_datetime(users['dt_joined']) # add dt_joined for est/edt
+users['dt_joined']=pd.to_datetime(users['']) # add dt_joined for est/edt
 users['dt_joined_et']=users.dt_joined.dt.tz_localize('UTC').dt.tz_convert('US/Eastern').dt.strftime("%Y-%m-%d %H:%M:%S")
 # users['dt_last_active']=pd.to_datetime(users['dt_last_active']) # not et
 # users['renter_id']=users['id']
