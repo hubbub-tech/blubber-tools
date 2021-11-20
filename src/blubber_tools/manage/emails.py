@@ -19,8 +19,9 @@ def _send_email(to, subject, body):
         from_email=(SG.DEFAULT_SENDER, SG.DEFAULT_SENDER_NAME),
         to_emails=to,
         subject=subject,
-        plain_text_content=body
+        html_content=body
     )
+    msg.cc = SG.DEFAULT_RECEIVER
     try:
         sg = SendGridAPIClient(SG.SENDGRID_API_KEY)
         response = sg.send(msg)
