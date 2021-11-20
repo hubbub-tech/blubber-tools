@@ -26,9 +26,9 @@ def dashboard(item, user):
 def users_interface():
     "An interface for running queries on users."
 
-@click.command('lfv')
-def lfv():
-    lfv = generate_renters_by_ltv_csv()
+@click.command('ltv')
+def ltv():
+    ltv = generate_renters_by_ltv_csv()
     click.echo("A lifetime value csv has been generated in the repository's root directory.")
 
-users_interface.add_command(lfv)
+users_interface.add_command(ltv)
