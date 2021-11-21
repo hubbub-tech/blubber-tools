@@ -89,7 +89,7 @@ def generate_date_li(start_mo='2020-09',end_mo=current_mo):
 
 # print(generate_date_li('2020-12','2021-06'))
 
-dateli = generate_date_li() ## default: all data
+# dateli = generate_date_li() ## default: all data
 # print(dateli)
 
 def avg_amt_spent_per_item(rev,rentals_started):
@@ -106,8 +106,9 @@ def items_per_ordering_user(orders,ordering_users):
     a=0
   return a
 
-def metrics_df(res_cal, orders, users):
+def metrics_df(res_cal=res_cal, orders=orders, users=users, start_mo='2020-09' , end_mo=current_mo):
     df=pd.DataFrame()
+    dateli=generate_date_li(start_mo,end_mo)
     for i in dateli:
         # print(i)
         rev_mo=res_cal[(res_cal.date_started>=i[0])&(res_cal.date_started<=i[1])].charge.sum()
@@ -134,9 +135,14 @@ def metrics_df(res_cal, orders, users):
               'cumulative users','items ordered by month','cumulative items ordered','rentals started by month',
               'cumulative rentals started','average amount user spent on each item by month',
               'items per ordering user by month','percent users ordering by month']
+
 # print(df)
     # df.to_csv('metrics.csv') # generate metrics csv
     return df
 
-df=metrics_df(res_cal, orders, users)
+df=metrics_df() #res_cal, orders, users)
 df.to_csv('metrics.csv') # generate metrics csv
+pct_growth_monthly=metrics.pct_change(axis='columns') # percentages are in fraction form, not multiplied by 100
+pct_growth_yoy=metrics.pct_change(axis='columns',periods=12).dropna(axis=1,how='all') # percentages are in fraction form, not multiplied by 100
+pct_growth_monthly.to_csv('pct_growth_monthly.csv')
+pct_growth_yoy.to_csv('pct_growth_yoy.csv')
