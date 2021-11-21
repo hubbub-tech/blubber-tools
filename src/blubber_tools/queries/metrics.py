@@ -79,42 +79,36 @@ current_mo=str(datetime.now().year)+'-'+str(datetime.now().month)
 # inputs: what month to start, what month to end, default is all data up to today
 # input format: 'yyyy-mm', eg. generate_date_li('2021-01','2021-09')
 def generate_date_li(start_mo='2020-09',end_mo=current_mo):
-    # print('start month: ',start_mo,'end month :',end_mo)
     if end_mo==current_mo:
-        # print('end month = current month')
         if current_mo.split('-')[1] != '12':
-            # print('end/current month is not 12')
             mo_ends=list(pd.date_range(start=start_mo, end=str(datetime.now().year)+'-'+str(datetime.now().month+1), freq='M').astype(str))
         else:
-            # print('end/current month is 12')
             mo_ends=list(pd.date_range(start=start_mo, end=str(datetime.now().year+1)+'-01', freq='M').astype(str))
     else:
-        # print('end month is not current month')
         if end_mo.split('-')[1] != '12':
-            # print('end/current month is not 12')
             mo_ends=list(pd.date_range(start=start_mo, end=end_mo.split('-')[0]+'-'+str(int(end_mo.split('-')[1])+1), freq='M').astype(str))
         else:
-            # print('end/current month is 12')
             mo_ends=list(pd.date_range(start=start_mo, end=str(int(end_mo.split('-')[0])+1)+'-01', freq='M').astype(str))
     mo_starts=[]
     for i in mo_ends:
         mo_starts.append(i.split('-')[0]+'-'+i.split('-')[1]+'-01')
     datestrs=[list(x) for x in zip(mo_starts, mo_ends)]
-    # print(datestrs)
+    
     datetimes=[]
     for i in datestrs:
         datetimes.append([date(int(i[0].split('-')[0]),int(i[0].split('-')[1]),int(i[0].split('-')[2])), date(int(i[1].split('-')[0]),int(i[1].split('-')[1]),int(i[1].split('-')[2]))])
-    # print(datetimes)
+
     months=[]
     for i in mo_ends:
         months.append([i.split('-')[0]+'-'+i.split('-')[1]])
-    # print(months)
+
     dateli=[a + b +c for a, b, c in zip(datestrs, datetimes,months)]
+    
     return dateli
 
 # print(generate_date_li('2020-12','2021-06'))
 
-dateli = generate_date_li() ## default: all data
+#dateli = generate_date_li() ## default: all data
 # print(dateli)
 
 def avg_amt_spent_per_item(rev,rentals_started):
@@ -131,8 +125,9 @@ def items_per_ordering_user(orders,ordering_users):
     a=0
   return a
 
-def metrics_df(res_cal, orders, users):
+def metrics_df(res_cal=res_cal, orders=orders, users=users, start_mo='2020-09' , end_mo=current_mo):
     df=pd.DataFrame()
+    dateli=generate_date_li(start_mo,end_mo)
     for i in dateli:
         # print(i)
         rev_mo=res_cal[(res_cal.date_started>=i[0])&(res_cal.date_started<=i[1])].charge.sum()
@@ -159,9 +154,8 @@ def metrics_df(res_cal, orders, users):
               'cumulative users','items ordered by month','cumulative items ordered','rentals started by month',
               'cumulative rentals started','average amount user spent on each item by month',
               'items per ordering user by month','percent users ordering by month']
-# print(df)
-    # df.to_csv('metrics.csv') # generate metrics csv
+
     return df
 
-df=metrics_df(res_cal, orders, users)
+df=metrics_df() 
 df.to_csv('metrics.csv') # generate metrics csv
