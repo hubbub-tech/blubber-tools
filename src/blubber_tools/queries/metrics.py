@@ -106,14 +106,6 @@ def generate_date_li(start_mo='2020-09',end_mo=current_mo):
 
     return dateli
 
-# print(generate_date_li('2020-12','2021-06'))
-
-<<<<<<< HEAD
-# dateli = generate_date_li() ## default: all data
-=======
-#dateli = generate_date_li() ## default: all data
->>>>>>> f8ca79e0fbbf119a1e9019772c553641878e6a26
-# print(dateli)
 
 def avg_amt_spent_per_item(rev,rentals_started):
   try:
