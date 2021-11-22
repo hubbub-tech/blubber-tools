@@ -151,7 +151,9 @@ def metrics_df(res_cal=res_cal, orders=orders, users=users, start_mo='2020-09' ,
 
 metrics=metrics_df()
 metrics.to_csv('metrics.csv') # generate metrics csv
-pct_growth_monthly=metrics.pct_change(axis='columns') # percentages are in fraction form, not multiplied by 100
-pct_growth_yoy=metrics.pct_change(axis='columns',periods=12).dropna(axis=1,how='all') # percentages are in fraction form, not multiplied by 100
+# percentages are in fraction form, not multiplied by 100
+pct_growth_monthly=metrics.pct_change(axis='columns').iloc[:,1:].fillna(0) # remove september 2020 because no growth rates for first month, and fill nans (result from 0 in both current period and previous) with 0
+pct_growth_yoy=metrics.pct_change(axis='columns',periods=12).dropna(axis=1,how='all').fillna(0)
+## to do: what to do with inf? 
 pct_growth_monthly.to_csv('pct_growth_monthly.csv')
 pct_growth_yoy.to_csv('pct_growth_yoy.csv')
