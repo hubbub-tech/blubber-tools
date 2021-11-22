@@ -125,7 +125,6 @@ def metrics_df(res_cal=res_cal, orders=orders, users=users, start_mo='2020-09' ,
     df=pd.DataFrame()
     dateli=generate_date_li(start_mo,end_mo)
     for i in dateli:
-        # print(i)
         rev_mo=res_cal[(res_cal.date_started>=i[0])&(res_cal.date_started<=i[1])].charge.sum()
         cum_rev_mo=res_cal[res_cal.date_started<=i[1]].charge.sum()
         ordering_users_mo=orders[(orders.date_placed>=i[2])&(orders.date_placed<=i[3])].renter_id.nunique()
@@ -135,11 +134,7 @@ def metrics_df(res_cal=res_cal, orders=orders, users=users, start_mo='2020-09' ,
         cum_orders_mo=len(orders[(orders.date_placed<=i[3])])
         rentals_started_mo=len(orders[(orders.res_date_start>=i[0])&(orders.res_date_start<=i[1])])
         cum_rentals_started=len(orders[(orders.res_date_start<=i[1])])
-        # avg_amt_spent_per_item_mo=rev_mo/orders_mo # average amount spent on each item
-        avg_amt_spent_per_item_mo=avg_amt_spent_per_item(rev_mo,rentals_started_mo)
-        # print(rev_mo/orders_mo)
-        # print(rev_mo/len(res_cal[(res_cal.date_started>=i[0])&(res_cal.date_started<=i[1])]))
-        # items_per_ordering_user_mo=orders_mo/ordering_users_mo
+        avg_amt_spent_per_item_mo=avg_amt_spent_per_item(float(rev_mo),float(rentals_started_mo))
         items_per_ordering_user_mo=items_per_ordering_user(orders_mo,ordering_users_mo)
         pct_users_ordering_mo=ordering_users_mo/cum_users_mo
         # all of above goes into a column for that month
