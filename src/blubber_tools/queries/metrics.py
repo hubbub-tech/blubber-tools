@@ -55,7 +55,7 @@ orders = write_orders_to_pandas()
 users = write_users_to_pandas()
 
 ## make columns datetime
-users['dt_joined']=pd.to_datetime(users['']) # add dt_joined for est/edt
+users['dt_joined']=pd.to_datetime(users['dt_joined']) # add dt_joined for est/edt
 users['dt_joined_et']=users.dt_joined.dt.tz_localize('UTC').dt.tz_convert('US/Eastern').dt.strftime("%Y-%m-%d %H:%M:%S")
 # users['dt_last_active']=pd.to_datetime(users['dt_last_active']) # not et
 # users['renter_id']=users['id']
