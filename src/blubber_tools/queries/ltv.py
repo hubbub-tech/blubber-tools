@@ -9,19 +9,32 @@
 import pandas as pd
 import numpy as np
 from metrics import write_reservations_to_pandas, write_orders_to_pandas, write_users_to_pandas
+from datetime import date, timedelta
 
 res=write_reservations_to_pandas()
 res_cal=res[res.is_calendared==1]
 orders=write_orders_to_pandas()
 users=write_users_to_pandas()
+users['days_since_joined']=date.today()-users['dt_joined'].dt.date
+
+# find users who've been on hubbub for a year or more
+# print(users.dtypes)
+users=users[users.days_since_joined >= timedelta(365)]
+### new
+res_cal['date_started']=pd.to_datetime(res_cal['date_started'])
+res_cal['date_started']=res_cal['date_started'].dt.date
+orders=orders[orders.renter_id.isin(list(users.id))]
+orders['res_date_start']=pd.to_datetime(orders['res_date_start'])
+orders['res_date_start']=orders['res_date_start'].dt.date
 
 # two ways to do ltv: 1) only using data from users who order, 2) using data from all users, including ones who haven't ordered
 
 # 1) only using data from ordering users (higher ltv)
-# avg order value per user:
+# avg order value per user, using data from a year ago to today for most updated value:
+res_cal=res_cal[(res_cal.renter_id.isin(list(users.id)))&(res_cal.date_started>=date.today()-timedelta(365))]
 avg_order_val_1=np.mean(res_cal.groupby('renter_id')['charge'].sum()/res_cal.groupby('renter_id').size())
-# avg num orders per user per year, using data from sep 2020 to sep 2021:
-orders_1yr=orders[(orders.date_placed.astype(str)>='2020-09-01')&(orders.date_placed.astype(str)<='2021-09-30')]
+# avg num orders per user per year, using data from a year ago to today for most updated value:
+orders_1yr=orders[orders.res_date_start>=date.today()-timedelta(365)]
 avg_num_orders_1=np.mean(orders_1yr.groupby('renter_id').size())
 # num years a user stays with us - tbd:
 # can do 4 years (length of undergrad)
@@ -55,7 +68,7 @@ avg_num_orders_2=np.mean(orders_1yr_all.groupby('renter_id').count().iloc[:,0])
 # ltv:
 def ltv_all_users(len_retention): # input: number of years a user stays with us
     return avg_order_val_2 * avg_num_orders_2 * len_retention
-    
+
 print("ltv for all users, assuming a user stays with us for 3 years: ",ltv_all_users(3))
 print("ltv for all users, assuming a user stays with us for 3.5 years: ",ltv_all_users(3.5))
 print("ltv for all users, assuming a user stays with us for 4 years: ",ltv_all_users(4))
