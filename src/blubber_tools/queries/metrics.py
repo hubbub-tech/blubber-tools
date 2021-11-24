@@ -42,12 +42,12 @@ def write_orders_to_pandas():
 def write_users_to_pandas():
     database = get_db() # @notice: database is an object containing psycopg.cursor and pscopg.connection
 
-    SQL = "SELECT dt_joined FROM users"
+    SQL = "SELECT id, dt_joined FROM users"
 
     database.cursor.execute(SQL)
     results = database.cursor.fetchall() # @notice: result is a list of tuples
 
-    users_pandas = pd.DataFrame(results, columns=['dt_joined'])
+    users_pandas = pd.DataFrame(results, columns=['id','dt_joined'])
     return users_pandas
 
 res = write_reservations_to_pandas()
