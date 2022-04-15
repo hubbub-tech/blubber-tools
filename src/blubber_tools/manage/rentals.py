@@ -10,10 +10,10 @@ from blubber_orm import Orders, Extensions, Reservations
 from .utils import _safely_swap_reservation
 
 def swap_order(order_id, swap_item_id):
-    order = Orders.get(order_id)
+    order = Orders.get({"id": order_id})
     if order:
-        item = Items.get(order.item_id)
-        renter = Users.get(order.renter_id)
+        item = Items.get({"id": order.item_id})
+        renter = Users.get({"id": order.renter_id})
         reservation = order.reservation
 
         dropoff = Dropoffs.by_order(order)
@@ -24,7 +24,7 @@ def swap_order(order_id, swap_item_id):
         print("dt_dropoff_completed", dt_dropoff_completed)
         print("dt_pickup_completed", dt_pickup_completed)
 
-        swap_item = Items.get(swap_item_id)
+        swap_item = Items.get({"id": swap_item_id})
         _safely_swap_reservation(renter, reservation, swap_item)
 
         swap_order_dict = {
@@ -62,11 +62,11 @@ def swap_extension(order_id, date_ended, swap_item_id):
 
         for extension in extensions:
             if extension.res_date_end == res_date_ended:
-                item = Items.get(extension.item_id)
-                renter = Users.get(extension.renter_id)
+                item = Items.get({"id": extension.item_id})
+                renter = Users.get({"id": extension.renter_id})
                 reservation = extension.reservation
 
-                swap_item = Items.get(swap_item_id)
+                swap_item = Items.get({"id": swap_item_id})
                 _safely_swap_reservation(renter, reservation, swap_item)
 
                 swap_extension_dict = {
@@ -84,7 +84,7 @@ def swap_extension(order_id, date_ended, swap_item_id):
         raise Exception("The order does not exist.")
 
 def cancel_order(order_id):
-    order = Orders.get(order_id)
+    order = Orders.get({"id": order_id})
     if order:
         reservation_keys = {
             "item_id": order.item_id,
@@ -108,7 +108,7 @@ def cancel_order(order_id):
         raise Exception("The order does not exist.")
 
 def cancel_extension(order_id, date_ended):
-    order = Orders.get(order_id)
+    order = Orders.get({"id": order_id})
     if order:
         extensions = order.extensions
         res_date_ended = datetime.strptime(date_ended, "%Y-%m-%d").date()

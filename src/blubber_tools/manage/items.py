@@ -9,4 +9,4 @@ def edit_calendar_start(item):
         first_reservation = reservations.pop(0)
         new_date_start = first_reservation.date_started
         if item.calendar.date_started > new_date_start:
-            Calendars.set(item.id, { "date_started": new_date_start })
+            Calendars.set({"id": item.id}, {"date_started": new_date_start})

@@ -1,0 +1,34 @@
+Hi {NAME},
+
+<p>
+Hope you're doing well and enjoying your rental!
+</p>
+
+<p>
+We're reaching out regarding the upcoming end of your rental of {LINKS}. To handle
+an early return, extend a rental, or schedule your pick-up, please go to this link:
+https://www.hubbub.shop/accounts/u/orders.
+</p>
+
+<p>
+As a reminder, if you’ll still be in the city for the upcoming summer or beyond,
+we have lots of items available for rent that we hope can save you money, time,
+and reduce waste! Check out what we got <a href='https://www.hubbub.shop/inventory'>here</a> :).
+</p>
+
+<p>
+If you don’t see what you’re looking for, please reach out and we can get whatever
+you need onto our platform!
+</p>
+
+<p>
+Let us know if you have any questions or concerns.
+</p>
+
+<p>
+All the best,
+</p>
+
+<p>
+Caro and <a href='https://www.hubbub.shop'>Team Hubbub</a>
+</p>
