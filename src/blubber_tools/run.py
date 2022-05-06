@@ -1,6 +1,6 @@
 import click
 
-from .manage.cli import email_interface
+from .manage.cli import email_interface, rentals_interface
 from .queries.cli import dashboard, users_interface
 
 @click.group()
@@ -23,6 +23,7 @@ def cli():
 cli.add_command(dashboard)
 cli.add_command(users_interface)
 cli.add_command(email_interface)
+cli.add_command(rentals_interface)
 
 if __name__ == '__main__':
     cli()

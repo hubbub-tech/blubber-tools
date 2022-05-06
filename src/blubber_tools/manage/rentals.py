@@ -92,8 +92,8 @@ def cancel_order(order_id):
             "date_started": order.res_date_start,
             "date_ended": order.res_date_end
         }
-        item = Items.get(order.item_id)
-        renter = Users.get(order.renter_id)
+        item = Items.get({"id": order.item_id})
+        renter = Users.get({"id": order.renter_id})
         reservation = order.reservation
 
         dropoff = Dropoffs.by_order(order)
